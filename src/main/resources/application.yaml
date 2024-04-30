@@ -1,0 +1,5 @@
+spring.application.name: shoprabbit
+spring.datasource.url: jdbc:postgresql://localhost:5432/shop_rabbit
+spring.datasource.username: postgres
+spring.datasource.password: robot123
+spring.jpa.hibernate.ddl-auto: update
