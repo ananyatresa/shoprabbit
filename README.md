@@ -1,2 +1,4 @@
 # shoprabbit
-Baceknd service for shoprabbit website
+Backend service for shoprabbit website
+
+A Springboot application using Java, Hibernate, Maven. 
