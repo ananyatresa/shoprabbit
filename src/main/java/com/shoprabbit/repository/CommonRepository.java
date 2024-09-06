@@ -1,5 +1,7 @@
 package com.shoprabbit.repository;
+import com.shoprabbit.config.DatabaseConfig;
 import com.shoprabbit.models.Product;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
