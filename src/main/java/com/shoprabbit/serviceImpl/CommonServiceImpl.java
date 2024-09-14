@@ -25,6 +25,8 @@ public class CommonServiceImpl implements CommonService {
         List<Product> productsList = commonRepository.findAll();
         if (productsList.isEmpty()){
             logger.info("No products exist in table `shop_rabbit.product_details` ");
+        }else{
+            logger.info("Products fetched successfully");
         }
         return productsList;
     }
@@ -36,6 +38,8 @@ public class CommonServiceImpl implements CommonService {
         List<Product> productsList = commonRepository.findByCategory(category);
         if (productsList.isEmpty()){
             logger.info("No products exist for category :" + category);
+        }else{
+            logger.info("Products fetched successfully for category :" + category);
         }
         return productsList;
     }
@@ -47,6 +51,9 @@ public class CommonServiceImpl implements CommonService {
         List<Product> productsList = commonRepository.findByTitle(keyword);
         if (productsList.isEmpty()){
             logger.info("No products exist for keyword :" + keyword);
+        }
+        else{
+            logger.info("Products fetched successfully for keyword :" + keyword);
         }
         return productsList;
     }
