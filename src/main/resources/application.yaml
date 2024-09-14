@@ -1,4 +1,5 @@
 spring.application.name: shoprabbit
+server.port: 8081
 spring.datasource.url: jdbc:postgresql:///shop_rabbit?cloudSqlInstance=vocal-day-434811-r7:us-west1:shop-rabbit-cloud-sql&socketFactory=com.google.cloud.sql.postgres.SocketFactory
 spring.datasource.username: ${DB_USERNAME}
 spring.datasource.password: ${DB_PASSWORD}

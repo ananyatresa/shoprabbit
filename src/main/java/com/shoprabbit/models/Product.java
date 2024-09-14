@@ -10,9 +10,8 @@ import lombok.Data;
 @Entity
 @Table(name = "product_details")
 public class Product {
-
     @Id
-    @Column(name = "productId")
+    @Column(name = "product_id")
     private String productId;
     @Column(name = "title")
     private String title;
@@ -20,7 +19,7 @@ public class Product {
     private String brand;
     @Column(name = "category")
     private String category;
-    @Column(name = "MRP")
-    private float MRP;
+    @Column(name = "mrp")
+    private float mrp;
 
 }
