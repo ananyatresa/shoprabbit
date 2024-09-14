@@ -17,11 +17,11 @@ FROM openjdk:17-jdk-alpine
 # Step 6: Set working directory for runtime
 WORKDIR /app
 
-# Step 7: Copy the jar file from the build stage
-COPY --from=build /app/target/your-app-name.jar /app/app.jar
+# Copy the Spring Boot repackaged jar file (with dependencies)
+COPY target/shoprabbit-0.0.1-SNAPSHOT.jar /app/shoprabbit.jar
 
-# Step 8: Expose port 8080 (default port for Spring Boot)
+# Step 8: Expose port 8081 (default port for Spring Boot)
 EXPOSE 8081
 
-# Step 9: Define the command to run the application
-ENTRYPOINT ["java", "-jar", "/app/app.jar"]
+# Set the entry point for the container to run the jar
+ENTRYPOINT ["java", "-jar", "/app/shoprabbit.jar"]
