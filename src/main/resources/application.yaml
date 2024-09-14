@@ -1,5 +1,7 @@
 spring.application.name: shoprabbit
-spring.datasource.url: jdbc:postgresql://localhost:5432/shop_rabbit
+spring.datasource.url: jdbc:postgresql:///shop_rabbit?cloudSqlInstance=vocal-day-434811-r7:us-west1:shop-rabbit-cloud-sql&socketFactory=com.google.cloud.sql.postgres.SocketFactory
 spring.datasource.username: ${DB_USERNAME}
 spring.datasource.password: ${DB_PASSWORD}
+spring.datasource.driver-class-name: org.postgresql.Driver
+spring.jpa.database-platform: org.hibernate.dialect.PostgreSQLDialect
 spring.jpa.hibernate.ddl-auto: update
